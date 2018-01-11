@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  18px;
+}
+
+.burger__line {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.burger {
+  position: fixed;
+  right: 100px;
+  top: 30px;
+}
+
+.name__link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  left: 100px;
+  top: 30px;
+}
+
+.navlist {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+  top: 37.5vh;
+  left: 10px;
+  color: white;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: white;
+}
+
+.fullscreen {
+  height: 100vh;
+  
+}
+
+.project1 {
+  background-color: #FFE300;
+}
+
+.project2 {
+  background-color: #2958FF;
+}
+
+.project3 {
+  background-color: #FF850C;
+}
+
+.contact {
+  background-color: white;
+}
