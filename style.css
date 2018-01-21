@@ -1,21 +1,97 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
 body {
   margin: 0;
   background-color: black;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
   font-size: 36px;
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
+  font-size: 1.5rem;;
+}
+
+.overlay {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  z-index: 1;
+  width: 100vw;
+  left: 0;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-in;
+}
+.overlay__visible {
+  transform: translateX(100%);
+}
+
+.overlay__content {
+  position: relative;
+  top: 25%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.overlay a {
+  padding: 4rem;
+  text-decoration: none;
+  font-size: 3.5rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover {
+  text-decoration: line-through;
+  color: orange;
+}
+.overlay__content__link {
+  color: black;
+  z-index: 1;
+}
+.closebtn {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 4rem;
+}
+.closebtn:hover {
+  cursor: pointer;
+}
+
+
+.index{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50vw;
+  background-image: repeating-linear-gradient(-90deg,
+      transparent,
+      transparent 19.9%,
+      rgba(189,189,189, .4) 20%);
+}
+
+.index__title {
+  color: rgba(255,255,255,1);
+}
+
+.index__tagline {
+  color: rgba(255,255,255,.5);
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  18px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+.link__hidden:hover .hidden {
+  display: inline;
 }
 
 .burger__line {
@@ -39,6 +115,15 @@ p {
   left: 100px;
   top: 30px;
 }
+.name__link__long {
+  display: none;
+}
+.name__link:hover .name__link__long{
+  display: inline;
+}
+.name__link:hover .name__link__short{
+  display: none;
+}
 
 .navlist {
   position: fixed;
@@ -59,7 +144,7 @@ p {
 
 .fullscreen {
   height: 100vh;
-  
+
 }
 
 .project1 {

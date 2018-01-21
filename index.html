@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Kitty Allen | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <a class="name__link" href="#about">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kitty Allen | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <a class="name__link" href="#about">
       <span class="name__link__short">ka</span>
-      <span class="name__link__long"></span>
+      <span class="name__link__long">kitty allen</span>
     </a>
 
-    <div class="burger">
-      <div class="burger__line"></div>
-      <div class="burger__line"></div>
-      <div class="burger__line"></div>
+  <!--Navigation Sections -->
+  <div class="burger" id="nav">
+    <div class="burger__line"></div>
+    <div class="burger__line"></div>
+    <div class="burger__line"></div>
+  </div>
+
+  <div class="overlay" id="full_nav">
+    <span id="closebtn" class="closebtn">&times;</span>
+    <div class="overlay__content">
+      <a href="#about"><span class="overlay__content__link">about</span></a>
+      <a href="#project1"><span class="overlay__content__link">projects</span></a>
+      <a href="#contact"><span class="overlay__content__link">contact</span></a>
     </div>
+  </div>
+
 
   <ul class="navlist">
     <li>
-      <a href="#index">00</a>
+      <a href="#index" class="link__hidden">00 <span class="hidden"> - kitty allen</span></a>
     </li>
     <li>
-      <a href="#about">01</a>
+      <a href="#about" class="link__hidden">01 <span class="hidden"> - about</span></a>
     </li>
     <li>
-      <a href="#project1">02</a>
+      <a href="#project1" class="link__hidden">02 <span class="hidden"> - projects</span></a>
     </li>
     <li>
-      <a href="#contact">03</a>
+      <a href="#contact" class="link__hidden">03 <span class="hidden"> - contact</span></a>
     </li>
   </ul>
 
   <div id="index" class="fullscreen index">
-    <h3>Creative Developer</h3>
-    <h3>Tagline lorem ipsum</h3>
+    <h3 class="index__title">Creative Developer</h3>
+    <h3 class="index__tagline">Tagline lorem ipsum</h3>
   </div>
 
   <div id="about" class="fullscreen about">
     <h3>Creative Developer</h3>
-    <p>My name is Kitty Allen, curious and enthusiastic, I am skilled in both front and back end development.  Having recently graduated from Founders & Coders, a 16 week intensive bootcamp course I am currently looking for work.</p>
+    <p>My name is Kitty Allen, curious and enthusiastic, I am skilled in both front and back end development. Having recently graduated from Founders & Coders, a 16 week intensive bootcamp course I am currently looking for work.</p>
     <p>You can find me on <a href="#">github</a>, <a href="#">codepen</a>, and <a href="#">linkedin</a>.</p>
   </div>
 
   <div id="project1" class="fullscreen project1">
     <h3>Home Safe</h3>
-    <p>A web app for parents and primary schools.  Allowing parents to login an notify a school that someone other than themselves will be picking up their child.</p>
+    <p>A web app for parents and primary schools. Allowing parents to login an notify a school that someone other than themselves will be picking up their child.</p>
     <a href="#">Discover</a>
   </div>
 
@@ -69,8 +82,9 @@
   </div>
 
 
-  </body>
+</body>
 
 
-  <script type="text/javascript"></script>
+<script type="text/javascript" src="./script.js"></script>
+
 </html>
