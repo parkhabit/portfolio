@@ -26,7 +26,7 @@ h3 {
   transition: all 0.8s ease-in;
 }
 .overlay__visible {
-  transform: translateX(100%);
+  transform: translateX(0);
 }
 
 .overlay__content {
@@ -57,6 +57,7 @@ h3 {
   top: 1rem;
   right: 3rem;
   font-size: 4rem;
+  z-index: 5;
 }
 .closebtn:hover {
   cursor: pointer;
@@ -75,16 +76,16 @@ h3 {
       rgba(189,189,189, .4) 20%);
 }
 
-.index__title {
+.index__title, .about__title {
   color: rgba(255,255,255,1);
 }
 
 .index__tagline {
   color: rgba(255,255,255,.5);
 }
-
-p {
-  font-size: 18px;
+.about__tagline {
+  color: rgba(255,255,255,.5);
+  0.5rem;
 }
 
 .hidden {
@@ -144,7 +145,13 @@ p {
 
 .fullscreen {
   height: 100vh;
+}
 
+.about {
+  background-image: repeating-linear-gradient(-90deg,
+      transparent,
+      transparent 19.9%,
+      rgba(189,189,189, .4) 20%);
 }
 
 .project1 {

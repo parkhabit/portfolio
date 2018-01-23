@@ -1,12 +1,11 @@
-let navClose = document.getElementById('nav');
-let navOverlay = document.getElementById('full_nav');
-let navOpen = document.getElementById('nav');
+const navOverlay = document.getElementById("full_nav");
+const navOpenButton = document.getElementById("nav");
+const navCloseButton = document.getElementById("closebtn");
 
-
-navOpen.addEventListener('click', function() {
-  navOverlay.classList.add('overlay__visible')
+navOpenButton.addEventListener("click", function() {
+  navOverlay.classList.add("overlay__visible");
 });
 
-navClose.addEventListener('click', function() {
-    navOverlay.classList.remove('overlay__visible');
+navCloseButton.addEventListener("click", function() {
+  navOverlay.classList.remove("overlay__visible");
 });
