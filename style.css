@@ -1,0 +1,239 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 1.5rem;;
+}
+a {
+  text-decoration: none;
+  color: rgba(255,255,255,.5);
+}
+a:hover {
+  color: rgba(255,255,255,1);
+}
+
+.overlay {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  z-index: 1;
+  width: 100vw;
+  left: 0;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in;
+}
+.overlay__visible {
+  transform: translateX(0);
+}
+
+.overlay__content {
+  position: relative;
+  top: 25vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.overlay a {
+  padding: 4rem;
+  text-decoration: none;
+  font-size: 4.5rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover {
+  text-decoration: line-through;
+  color: orange;
+}
+.overlay__content__link {
+  color: black;
+  z-index: 1;
+}
+.closebtn {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 4rem;
+  z-index: 5;
+}
+.closebtn:hover {
+  cursor: pointer;
+}
+
+
+.index, .about, .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-left: 35vw; */
+  background-image: repeating-linear-gradient(-90deg,
+      transparent,
+      transparent 19.9%,
+      rgba(189,189,189, .4) 20%);
+}
+
+.text__container{
+  border-left: 1px solid white;
+  padding-left: 1rem;
+  align-self: center;
+  max-width: 40vw;
+  min-width: 40vw;
+}
+.index__title, .about__title {
+  color: rgba(255,255,255,1);
+}
+
+.index__tagline {
+  color: rgba(255,255,255,.5);
+}
+.about__tagline {
+  color: rgba(255,255,255,.5);
+  0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+.link__hidden:hover .hidden {
+  display: inline;
+}
+
+.burger__line {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.burger {
+  position: fixed;
+  right: 100px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.name__link {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  left: 100px;
+  top: 30px;
+}
+.name__link__long {
+  display: none;
+}
+.name__link:hover .name__link__long{
+  display: inline;
+}
+.name__link:hover .name__link__short{
+  display: none;
+}
+
+.navlist {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+  top: 40vh;
+  left: 10px;
+  color: white;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: white;
+}
+
+.fullscreen {
+  min-height: 100vh;
+}
+
+.project1, .project3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #2958FF;
+  background-image: repeating-linear-gradient(-90deg,
+      transparent,
+      transparent 19.9%,
+      rgba(255,255,255, 1) 20%);
+}
+
+.project2 {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: repeating-linear-gradient(-90deg,
+      transparent,
+      transparent 19.9%,
+      rgba(255,255,255, 1) 20%);
+}
+.project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 40vw;
+  max-height: 25vh;
+  align-self: center;
+  background-color: rgba(255,255,255,.3);
+  padding-left: 5%;
+  padding-bottom: 15%;
+  position: relative;
+  bottom: 20vh;
+}
+.project__container__background {
+  background-color: rgba(255,255,255,.6);
+  min-width: 45vw;
+  min-height: 45vh;
+  position: relative;
+  left: 31vw;
+  top: 10vh;
+}
+.project__tagline {
+    color: #4F4F4F;
+}
+.contact {
+  color: white;
+}
+.project__link {
+  text-decoration: none;
+  color: #4F4F4F;
+  border-top: 2px solid #4F4F4F;
+  padding-top: 1rem;
+}
+.project__link:hover {
+  color: black;
+}
+
+.project__link__circles {
+  display: flex;
+  align-self: center;
+  font-size: 5rem;
+  color: white;
+  width: 25vw;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top:-30vh;
+}
+.highlighted {
+  font-size: 10rem;
+}
