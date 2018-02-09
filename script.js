@@ -10,7 +10,6 @@ navOpenButton.addEventListener("click", function() {
 });
 
 navCloseButton.addEventListener("click", function() {
-  console.log("hello i am working");
   navOverlay.classList.remove("overlay__visible");
 });
 
